@@ -1,12 +1,5 @@
-export class Serie {
-    id;
-    name;
-    channel;
-    seasons;
-    description;
-    url;
-    image;
-    constructor(id, name, channel, seasons, description, url, image) {
+var Serie = /** @class */ (function () {
+    function Serie(id, name, channel, seasons, description, url, image) {
         this.id = id;
         this.name = name;
         this.channel = channel;
@@ -15,4 +8,6 @@ export class Serie {
         this.url = url;
         this.image = image;
     }
-}
+    return Serie;
+}());
+export { Serie };
